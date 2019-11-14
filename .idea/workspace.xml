@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef6839bd-b28c-459b-9531-0c5f54d1285e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ws/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ws/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/btg_website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/btg_website.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btg_app/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/btg_app/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btg_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/btg_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btg_website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/btg_website/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btg_website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/btg_website/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/btg_app/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="193" column="52" selection-start-line="193" selection-start-column="52" selection-end-line="193" selection-end-column="52" />
+            <state relative-caret-position="510">
+              <caret line="200" column="13" lean-forward="true" selection-start-line="200" selection-start-column="13" selection-end-line="200" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -320,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/btg_app/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="193" column="52" selection-start-line="193" selection-start-column="52" selection-end-line="193" selection-end-column="52" />
+        <state relative-caret-position="510">
+          <caret line="200" column="13" lean-forward="true" selection-start-line="200" selection-start-column="13" selection-end-line="200" selection-end-column="13" />
         </state>
       </provider>
     </entry>
