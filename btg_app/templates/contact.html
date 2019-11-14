@@ -32,7 +32,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href='{% static "assets/ico/apple-touch-icon-114-precomposed.png" %}'>
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href='{% static "assets/ico/apple-touch-icon-72-precomposed.png" %}'>
   <link rel="apple-touch-icon-precomposed" href='{% static "assets/ico/apple-touch-icon-57-precomposed.png" %}'>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- =======================================================
     Theme Name: Plato
     Theme URL: https://bootstrapmade.com/plato-responsive-bootstrap-website-template/
@@ -143,8 +143,8 @@
         </div>
         <div class="span8">
           <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-13.96468908098944!3d10.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
-                    width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="380" id="gmap_canvas" src="https://maps.google.com/maps?q=4054%20Avenue%20de%20Yasser%20Arafat%2C%20Hammam%20Sousse%2C%20Tunisie&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>
           </div>
           <div class="spacer30">
           </div>
@@ -167,14 +167,53 @@
                 <div class="validation"></div>
               </div>
               <div class="span8 form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" id="msg" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
-                <div class="text-center">
-                  <button class="btn btn-color btn-rounded" type="submit">Send message</button>
-                </div>
+
               </div>
             </div>
           </form>
+          <div class="text-center">
+                  <button class="btn btn-color btn-rounded" onclick="myFunction()">Send message</button>
+                </div>
+          <p id="demo"></p>
+
+          <script>
+          function myFunction() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("msg").value;
+            var result = {"name": name,"email": email, "subject": subject,"message": message};
+            var v = JSON.stringify(result);
+            var params = "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message;
+            alert(params)
+
+            $.ajax({
+            type: "POST",
+            url: "http://localhost:8000/submit_data/",
+            // The key needs to match your method's input parameter (case-sensitive).
+            data: JSON.stringify(result),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(data){alert(data);},
+            failure: function(errMsg) {
+                alert(errMsg);
+            }
+        });
+
+            <!--var xhttp = new XMLHttpRequest();-->
+            <!--xhttp.onreadystatechange = function() {-->
+            <!--if (this.readyState == 4 && this.status == 200) {-->
+              <!--&lt;!&ndash;document.getElementById("demo").innerHTML = this.responseText;&ndash;&gt;-->
+              <!--alert(this.responseText);-->
+            <!--}-->
+            <!--};-->
+            <!--xhttp.open("POST", "http://localhost:8000/submit_data/", true);-->
+            <!--var params = "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message-->
+            <!--xhttp.send(params);-->
+            }
+          </script>
         </div>
       </div>
     </div>
