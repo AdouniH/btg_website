@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef6839bd-b28c-459b-9531-0c5f54d1285e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/btg_app/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/btg_app/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="4" />
+          <entry key="ignore" value="2" />
           <entry key="py" value="16" />
         </counts>
       </usages-collector>
@@ -31,11 +33,13 @@
         <counts>
           <entry key="HTML" value="4" />
           <entry key="Python" value="16" />
+          <entry key="XHTML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1034" />
+          <entry key="ignore" value="7" />
           <entry key="py" value="303" />
         </counts>
       </usages-collector>
@@ -43,13 +47,14 @@
         <counts>
           <entry key="HTML" value="1034" />
           <entry key="Python" value="303" />
+          <entry key="XHTML" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/btg_app/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
@@ -58,11 +63,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.ignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/btg_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -86,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/ws/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -135,6 +149,7 @@
       <find>scri</find>
       <find>send</find>
       <find>loc</find>
+      <find>aler</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,6 +169,7 @@
         <option value="$PROJECT_DIR$/ws/urls.py" />
         <option value="$PROJECT_DIR$/ws/views.py" />
         <option value="$PROJECT_DIR$/btg_app/templates/contact.html" />
+        <option value="$PROJECT_DIR$/.ignore" />
       </list>
     </option>
   </component>
@@ -345,14 +361,14 @@
     <entry file="file://$PROJECT_DIR$/ws/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/btg_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -363,6 +379,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="200" column="33" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
