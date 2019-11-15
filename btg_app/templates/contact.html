@@ -94,7 +94,7 @@
         </div>
         <div class="span8">
           <ul class="breadcrumb notop">
-            <li><a href="#">Home</a><span class="divider">/</span></li>
+            <li><a href="{% url 'index'%}">Home</a><span class="divider">/</span></li>
             <li class="active">Contact</li>
           </ul>
         </div>
@@ -191,12 +191,20 @@
 
             $.ajax({
             type: "POST",
-            url: "http://137.74.198.167/submit_data/",
+            <!--url: "http://137.74.198.167/submit_data/",-->
+            url: "http://localhost:8000/submit_data/",
             // The key needs to match your method's input parameter (case-sensitive).
             data: JSON.stringify(result),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            success: function(data){var test='test';},
+            success: function(data){
+                document.getElementById("name").innerHTML = "";
+                document.getElementById("email").innerHTML = "";
+                document.getElementById("subject").innerHTML = "";
+                document.getElementById("result").innerHTML = "";
+                alert('Votre message a été envoyé avec succès');
+                <!--var test = 'test';-->
+                },
             failure: function(errMsg) {
                 var test= 'test';
                 <!--alert(errMsg);-->
