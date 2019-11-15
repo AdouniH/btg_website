@@ -187,11 +187,11 @@
             var result = {"name": name,"email": email, "subject": subject,"message": message};
             var v = JSON.stringify(result);
             var params = "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message;
-            alert(params)
+    
 
             $.ajax({
             type: "POST",
-            url: "http://localhost:8000/submit_data/",
+            url: "http://137.74.198.167/submit_data/",
             // The key needs to match your method's input parameter (case-sensitive).
             data: JSON.stringify(result),
             contentType: "application/json; charset=utf-8",
